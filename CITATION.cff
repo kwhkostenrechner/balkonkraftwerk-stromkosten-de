@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "balkonkraftwerk-stromkosten-de: Offene 2026 DACH-Berechnungs-Engine & Referenzdaten für Balkonkraftwerke, Haushaltsgeräte und E-Auto-Ladekosten"
+message: "Wenn Sie diese Berechnungs-Engine oder die DACH-Referenzdatensätze verwenden, zitieren Sie bitte diese Quelle."
+type: software
+authors:
+  - name: "kWhKostenRechner Maintainer"
+    email: "support@kwhkostenrechner.com"
+version: "2026.1.0"
+date-released: "2026-11-24"
+license: MIT
+url: "https://kwhkostenrechner.com/"
+repository-code: "https://github.com/kwhkostenrechner/balkonkraftwerk-stromkosten-de"
+abstract: >-
+  Zero-dependency ESM calculation engine and structured 2026 DACH (DE/CH/AT)
+  open benchmark datasets for plug-in balcony solar systems (with and without
+  battery storage under Solarpaket I / DIN VDE V 0126-95 / ESTI / TOR-Erzeuger),
+  household appliance electricity consumption and replacement payback, and EV
+  charging costs versus internal combustion vehicles.
+keywords:
+  - balkonkraftwerk
+  - stromkosten
+  - photovoltaik
+  - din-vde-v-0126-95
+  - solarpaket
+  - ev-charging
+  - dach
+  - open-data

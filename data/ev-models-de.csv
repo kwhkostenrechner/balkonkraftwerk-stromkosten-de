@@ -1,0 +1,21 @@
+slug,brand,model,segment,battery_net_kwh,wltp_kwh_per_100km,real_kwh_per_100km,ac_max_kw,dc_max_kw,comparable_ice_model,comparable_ice_l_per_100km,home_cost_eur_per_100km_de_2026,ice_cost_eur_per_100km_de_2026
+vw-id-3,Volkswagen,VW ID.3 Pro (59 kWh),Kompaktklasse,59,15.3,17.8,11,165,VW Golf 8 1.5 TSI,6.4,6.64,11.2
+vw-id-4,Volkswagen,VW ID.4 Pro (77 kWh),Mittelklasse-SUV,77,16.5,19.6,11,175,VW Tiguan 1.5 eTSI,7.4,7.31,12.95
+vw-id-7,Volkswagen,VW ID.7 Pro (77 kWh),Obere Mittelklasse,77,14.2,17.2,11,175,VW Passat 1.5 eTSI,6.6,6.42,11.55
+tesla-model-y,Tesla,Tesla Model Y (Long Range / RWD),Mittelklasse-SUV,75,15.7,18.4,11,250,BMW X3 20i / Audi Q5,7.8,6.86,13.65
+tesla-model-3,Tesla,Tesla Model 3 (Highland RWD),Mittelklasse-Limousine,60,13.2,15.8,11,170,BMW 320i Limousine,6.9,5.89,12.08
+skoda-enyaq,Škoda,Škoda Enyaq 85 (77 kWh),Familien-SUV,77,15.8,19.2,11,175,Škoda Kodiaq 1.5 TSI,7.5,7.16,13.13
+cupra-born,CUPRA,CUPRA Born (59 kWh),Kompaktklasse,59,15.6,18,11,165,SEAT Leon 1.5 TSI,6.5,6.71,11.38
+bmw-ix1,BMW,BMW iX1 eDrive20 / xDrive30,Kompakt-SUV,64.7,16.4,19.4,11,130,BMW X1 sDrive20i,7.2,7.24,12.6
+bmw-i4,BMW,BMW i4 eDrive40 (81 kWh),Mittelklasse Gran Coupé,81.1,16.1,18.6,11,205,BMW 420i Gran Coupé,7.3,6.94,12.78
+mercedes-eqa,Mercedes-Benz,"Mercedes EQA 250+ (70,5 kWh)",Kompakt-SUV,70.5,15.3,18.8,11,100,Mercedes GLA 200,7.2,7.01,12.6
+audi-q4-e-tron,Audi,Audi Q4 45 e-tron (77 kWh),Mittelklasse-SUV,77,16.6,19.7,11,175,Audi Q3 40 TFSI,7.6,7.35,13.3
+hyundai-ioniq-5,Hyundai,Hyundai Ioniq 5 (84 kWh),Mittelklasse-Crossover,84,16.8,20.1,11,260,Hyundai Tucson 1.6 T-GDI,7.7,7.5,13.47
+kia-ev6,Kia,Kia EV6 (84 kWh RWD),Mittelklasse-Crossover,84,16.2,19.3,11,258,Kia Sportage 1.6 T-GDI,7.5,7.2,13.13
+mg4-electric,MG,MG4 Electric Standard / Comfort,Kompaktklasse,61.7,16,18.5,11,135,Opel Astra 1.2 Turbo,6.4,6.9,11.2
+renault-5-e-tech,Renault,Renault 5 E-Tech (52 kWh),Kleinwagen,52,14.9,16.9,11,100,Renault Clio TCe 90,5.9,6.3,10.33
+dacia-spring,Dacia,"Dacia Spring Electric 65 (26,8 kWh)",Kleinstwagen,26.8,13.5,15.2,3.7,30,Dacia Sandero SCe 65,5.8,5.67,10.15
+fiat-500e,Fiat,Fiat 500e (42 kWh),Kleinstwagen,37.3,14,16.2,11,85,Fiat 500 1.0 Hybrid,5.7,6.04,9.97
+opel-corsa-electric,Opel,Opel Corsa Electric (51 kWh),Kleinwagen,48.1,14.6,16.8,11,100,Opel Corsa 1.2 Benziner,6,6.27,10.5
+volvo-ex30,Volvo,Volvo EX30 Single Motor Extended Range,Kompakt-SUV,64,17,19.5,11,153,Volvo XC40 B3 Benziner,7.4,7.27,12.95
+byd-atto-3,BYD,"BYD Atto 3 (60,5 kWh Blade-Akku)",Kompakt-SUV,60.5,15.6,19,11,88,VW T-Roc 1.5 TSI,6.9,7.09,12.08

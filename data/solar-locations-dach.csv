@@ -1,0 +1,21 @@
+slug,name,region_type,country,currency,specific_yield_kwh_per_kwp,sunshine_hours_per_year,default_price_per_kwh
+bayern,Bayern,Bundesland (DE),DE,EUR,1080,1780,0.373
+baden-wuerttemberg,Baden-Württemberg,Bundesland (DE),DE,EUR,1065,1760,0.373
+berlin,Berlin,Bundesland (DE),DE,EUR,975,1650,0.378
+brandenburg,Brandenburg,Bundesland (DE),DE,EUR,985,1670,0.376
+bremen,Bremen,Bundesland (DE),DE,EUR,935,1560,0.375
+hamburg,Hamburg,Bundesland (DE),DE,EUR,935,1570,0.379
+hessen,Hessen,Bundesland (DE),DE,EUR,995,1640,0.373
+mecklenburg-vorpommern,Mecklenburg-Vorpommern,Bundesland (DE),DE,EUR,980,1720,0.382
+niedersachsen,Niedersachsen,Bundesland (DE),DE,EUR,945,1580,0.375
+nordrhein-westfalen,Nordrhein-Westfalen,Bundesland (DE),DE,EUR,955,1590,0.374
+rheinland-pfalz,Rheinland-Pfalz,Bundesland (DE),DE,EUR,1020,1690,0.373
+saarland,Saarland,Bundesland (DE),DE,EUR,1015,1680,0.374
+sachsen,Sachsen,Bundesland (DE),DE,EUR,1005,1670,0.375
+sachsen-anhalt,Sachsen-Anhalt,Bundesland (DE),DE,EUR,985,1650,0.378
+schleswig-holstein,Schleswig-Holstein,Bundesland (DE),DE,EUR,930,1610,0.384
+thueringen,Thüringen,Bundesland (DE),DE,EUR,995,1640,0.375
+zuerich,Zürich,Kanton / Region (CH),CH,CHF,1060,1690,0.277
+bern,Bern,Kanton / Region (CH),CH,CHF,1075,1710,0.285
+basel,Basel,Kanton / Region (CH),CH,CHF,1055,1680,0.277
+genf,Genf,Kanton / Region (CH),CH,CHF,1135,1830,0.277

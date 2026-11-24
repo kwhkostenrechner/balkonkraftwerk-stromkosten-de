@@ -1,0 +1,473 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-24",
+  "data_year": 2026,
+  "jurisdiction": [
+    "DE",
+    "CH",
+    "AT"
+  ],
+  "license": "CC-BY-4.0",
+  "reference_calculator": "https://kwhkostenrechner.com",
+  "sources": {
+    "bdew": {
+      "name": "BDEW-Strompreisanalyse (Deutschland)",
+      "url": "https://www.bdew.de/service/daten-und-grafiken/bdew-strompreisanalyse/",
+      "scope": "Durchschnittlicher Haushaltsstrompreis DE 2026 (37,3 ct/kWh bei 3.500 kWh/Jahr)"
+    },
+    "elcom": {
+      "name": "Eidgenössische Elektrizitätskommission ElCom (Schweiz)",
+      "url": "https://www.strompreis.elcom.admin.ch/",
+      "scope": "Strompreis-Median CH 2026 (27,7 Rp./kWh, Profil H4, 4.500 kWh/Jahr)"
+    },
+    "e_control": {
+      "name": "E-Control Austria (Österreich)",
+      "url": "https://www.e-control.at/",
+      "scope": "Haushaltsstrompreis-Monitor AT 2026 (27,0 ct/kWh, 3.500 kWh/Jahr)"
+    },
+    "vde_0126_95": {
+      "name": "VDE / DKE — Produktnorm DIN VDE V 0126-95 (Steckersolargeräte)",
+      "url": "https://www.vde.com/de/agf/themen/steckersolargeraete",
+      "scope": "Stecker- und Leistungsgrenzen DE (800 VA WR, Schuko <= 960 Wp, Energiesteckdose 961–2.000 Wp)"
+    },
+    "mastr": {
+      "name": "Bundesnetzagentur — Marktstammdatenregister (MaStR)",
+      "url": "https://www.marktstammdatenregister.de/",
+      "scope": "Vereinfachte Online-Registrierung von Steckersolargeräten nach Solarpaket I / EEG"
+    },
+    "pvgis": {
+      "name": "EU Joint Research Centre — PVGIS",
+      "url": "https://re.jrc.ec.europa.eu/pvg_tools/en/",
+      "scope": "Spezifische Jahreserträge (kWh/kWp) und Einstrahlungsprofile für DACH"
+    },
+    "htw_berlin": {
+      "name": "HTW Berlin — Stecker-Solar-Simulator",
+      "url": "https://solar.htw-berlin.de/",
+      "scope": "Wissenschaftliche Referenzprofile für Eigenverbrauchsquoten von Balkonkraftwerken"
+    },
+    "uba": {
+      "name": "Umweltbundesamt — CO2-Emissionsfaktoren im Strommix",
+      "url": "https://www.umweltbundesamt.de/",
+      "scope": "Strommix-Emissionsfaktoren zur CO2-Einsparungsberechnung"
+    },
+    "esti": {
+      "name": "Eidgenössisches Starkstrominspektorat (ESTI)",
+      "url": "https://www.esti.admin.ch/",
+      "scope": "Plug-&-Play-Steckeranlagen-Richtlinie in der Schweiz (600 W Grenze)"
+    }
+  },
+  "countries": {
+    "DE": {
+      "code": "DE",
+      "name": "Deutschland",
+      "shortLabel": "DE (€)",
+      "currency": "€",
+      "currencyIso": "EUR",
+      "subunit": "ct",
+      "defaultElectricityPrice": 0.373,
+      "defaultElectricityCt": 37.3,
+      "defaultPublicFastPrice": 0.59,
+      "defaultFuelPrice": 1.75,
+      "defaultYieldPerKwp": 990,
+      "co2GramsPerKwh": 363,
+      "priceSource": "BDEW-Strompreisanalyse 2026 (3.500 kWh Haushalt)",
+      "vdeHint": "Solarpaket I & DIN VDE V 0126-95 (DE 2026): max. 800 VA Wechselrichter, Schuko bis 960 Wp, bis 2.000 Wp mit Energiesteckdose & MaStR-Anmeldung."
+    },
+    "CH": {
+      "code": "CH",
+      "name": "Schweiz",
+      "shortLabel": "CH (CHF)",
+      "currency": "CHF",
+      "currencyIso": "CHF",
+      "subunit": "Rp.",
+      "defaultElectricityPrice": 0.277,
+      "defaultElectricityCt": 27.7,
+      "defaultPublicFastPrice": 0.55,
+      "defaultFuelPrice": 1.82,
+      "defaultYieldPerKwp": 1060,
+      "co2GramsPerKwh": 128,
+      "priceSource": "ElCom Strompreis-Median 2026 (Profil H4, 4.500 kWh)",
+      "vdeHint": "ESTI-Hinweis (Schweiz 2026): Plug-&-Play-Anlagen sind in der Schweiz in der Regel bis 600 W Wechselrichterleistung zulässig (Meldepflicht beim Netzbetreiber prüfen)."
+    },
+    "AT": {
+      "code": "AT",
+      "name": "Österreich",
+      "shortLabel": "AT (€)",
+      "currency": "€",
+      "currencyIso": "EUR",
+      "subunit": "ct",
+      "defaultElectricityPrice": 0.27,
+      "defaultElectricityCt": 27,
+      "defaultPublicFastPrice": 0.54,
+      "defaultFuelPrice": 1.62,
+      "defaultYieldPerKwp": 1030,
+      "co2GramsPerKwh": 145,
+      "priceSource": "E-Control Strompreis-Monitor 2026 (3.500 kWh Haushalt)",
+      "vdeHint": "TOR-Erzeuger Hinweis (Österreich 2026): Kleinsterzeugungsanlagen bis 800 W Einspeiseleistung sind vereinfacht anmeldefähig (2 Wochen vorab beim Netzbetreiber)."
+    }
+  },
+  "regulations": {
+    "DE": {
+      "framework": "Solarpaket I (EEG) & DIN VDE V 0126-95 (Stand 2026)",
+      "max_inverter_va": 800,
+      "max_module_wp_schuko": 960,
+      "max_module_wp_total": 2000,
+      "vat_rate_pct": 0,
+      "vat_legal_basis": "§ 12 Abs. 3 UStG (Nullsteuersatz auf PV-Komponenten und Speicher)",
+      "eeg_feed_in_note": "Steckersolargeräte werden nach Solarpaket I regulär der unentgeltlichen Abnahme zugeordnet; Wirtschaftlichkeit basiert auf Eigenverbrauch.",
+      "registration": "Vereinfachte Online-Registrierung im Marktstammdatenregister (MaStR), keine separate Netzbetreiber-Anmeldung erforderlich."
+    },
+    "CH": {
+      "framework": "ESTI-Weisung für Plug-&-Play-Photovoltaikanlagen",
+      "max_inverter_va": 600,
+      "registration": "Schriftliche Meldung beim lokalen Verteilnetzbetreiber vor Inbetriebnahme."
+    },
+    "AT": {
+      "framework": "TOR-Erzeuger (Kleinsterzeugungsanlagen)",
+      "max_inverter_va": 800,
+      "registration": "Vereinfachte Meldung beim Netzbetreiber mindestens 2 Wochen vor Inbetriebnahme."
+    }
+  },
+  "solar_model_parameters": {
+    "orientations": {
+      "sued": {
+        "key": "sued",
+        "label": "Süd",
+        "azimuthLabel": "180° (optimal)",
+        "factor": 1
+      },
+      "sued-ost": {
+        "key": "sued-ost",
+        "label": "Süd-Ost",
+        "azimuthLabel": "135°",
+        "factor": 0.95
+      },
+      "sued-west": {
+        "key": "sued-west",
+        "label": "Süd-West",
+        "azimuthLabel": "225°",
+        "factor": 0.95
+      },
+      "ost-west": {
+        "key": "ost-west",
+        "label": "Ost-West (geteilt)",
+        "azimuthLabel": "90° / 270°",
+        "factor": 0.88
+      },
+      "ost": {
+        "key": "ost",
+        "label": "Ost",
+        "azimuthLabel": "90°",
+        "factor": 0.8
+      },
+      "west": {
+        "key": "west",
+        "label": "West",
+        "azimuthLabel": "270°",
+        "factor": 0.8
+      }
+    },
+    "storage_options_kwh": [
+      0,
+      1,
+      1.6,
+      2,
+      3.2
+    ],
+    "tilt_curve_points": [
+      {
+        "tilt_deg": 0,
+        "factor": 0.88
+      },
+      {
+        "tilt_deg": 15,
+        "factor": 0.96
+      },
+      {
+        "tilt_deg": 30,
+        "factor": 1
+      },
+      {
+        "tilt_deg": 35,
+        "factor": 1
+      },
+      {
+        "tilt_deg": 45,
+        "factor": 0.98
+      },
+      {
+        "tilt_deg": 60,
+        "factor": 0.92
+      },
+      {
+        "tilt_deg": 75,
+        "factor": 0.82
+      },
+      {
+        "tilt_deg": 90,
+        "factor": 0.72
+      }
+    ],
+    "clipping_threshold_dc_ac_ratio": 1.25,
+    "clipping_slope_above_threshold": 0.08,
+    "clipping_min_factor": 0.85,
+    "self_consumption_base_formula": "clamp(0.28 + 0.14 * min(householdKwh / annualYieldKwh, 3.2), 0.30, 0.72)",
+    "storage_equivalent_full_cycles_per_year": 220,
+    "storage_round_trip_efficiency": 0.88,
+    "storage_max_self_consumption_share": 0.94,
+    "annual_module_degradation_rate": 0.005,
+    "ev_pv_self_generation_cost_per_kwh": 0.08
+  },
+  "hardware_specs": [
+    {
+      "id": "hoymiles-hms-800w-2t",
+      "brand": "Hoymiles",
+      "model": "HMS-800W-2T",
+      "category": "Mikrowechselrichter (Solo)",
+      "mppt_spec": "2 MPPT · 16–60 V (max. 2 × 14 A)",
+      "max_pv_input": "2 × 320–540+ Wp empfohlen",
+      "ac_output": "800 VA (3,48 A · 230 V)",
+      "storage_spec": "Ohne Speicher (Direkteinspeisung)",
+      "protection_and_warranty": "IP67 · passive Kühlung · WLAN integriert",
+      "source_label": "Hoymiles HMS-800W-2T Datenblatt"
+    },
+    {
+      "id": "anker-solix-solarbank2-pro",
+      "brand": "Anker SOLIX",
+      "model": "Solarbank 2 E1600 Pro",
+      "category": "All-in-One Speicher + WR",
+      "mppt_spec": "4 MPPT · 16–60 V (max. 16 A/Kanal)",
+      "max_pv_input": "Bis 2.400 W PV-Eingang",
+      "ac_output": "800 W AC (3,5 A · 230 V)",
+      "storage_spec": "1,6 kWh LiFePO4 (erweiterbar auf 9,6 kWh)",
+      "protection_and_warranty": "IP65 · −20 bis +55 °C · 6.000 Zyklen / 10 J.",
+      "source_label": "Anker SOLIX A17C1 Datenblatt"
+    },
+    {
+      "id": "anker-solix-solarbank2-ac",
+      "brand": "Anker SOLIX",
+      "model": "Solarbank 2 E1600 AC",
+      "category": "AC-gekoppelter Nachrüstspeicher",
+      "mppt_spec": "Nachrüstbar an bestehende 800-W-WR",
+      "max_pv_input": "1.000–2.400 W Ladeleistung (je Ausbau)",
+      "ac_output": "800 W netzgekoppelt",
+      "storage_spec": "1,6 bis 9,6 kWh (0–5 × BP1600 Modul)",
+      "protection_and_warranty": "LiFePO4 · modulare Nachrüstung ohne Umbau",
+      "source_label": "Anker SOLIX E1600 AC Handbuch"
+    },
+    {
+      "id": "zendure-hyper-2000",
+      "brand": "Zendure",
+      "model": "Hyper 2000 + AB1000/AB2000",
+      "category": "Hybrid-WR + Modul-Speicher",
+      "mppt_spec": "2 MPPT (4 PV-Ports) · 16–48 V",
+      "max_pv_input": "Bis 1.800 W (4 × 350–600 Wp)",
+      "ac_output": "800 W Einspeisung (1.200 W bidirektional)",
+      "storage_spec": "AB1000 (0,96 kWh) / AB2000 (1,92 kWh) stapelbar",
+      "protection_and_warranty": "IP65 · dynamische Nulleinspeisung möglich",
+      "source_label": "Zendure Hyper 2000 Datenblatt"
+    }
+  ],
+  "locations": [
+    {
+      "slug": "bayern",
+      "name": "Bayern",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 1080,
+      "sunshine_hours_per_year": 1780,
+      "default_price_per_kwh": 0.373,
+      "subsidy_note": "0 % MwSt. bundesweit auf Balkonkraftwerke & Speicher; viele bayerische Kommunen (u. a. München, Regensburg, Würzburg) legen zeitweise lokale Zuschüsse auf – vor Kauf auf der Gemeindeseite prüfen."
+    },
+    {
+      "slug": "baden-wuerttemberg",
+      "name": "Baden-Württemberg",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 1065,
+      "sunshine_hours_per_year": 1760,
+      "default_price_per_kwh": 0.373,
+      "subsidy_note": "Sonnenreichstes Flächenland neben Bayern; bundesweit 0 % MwSt. sowie kommunale Programme in Städten wie Stuttgart, Freiburg oder Heidelberg (Budget-abhängig)."
+    },
+    {
+      "slug": "berlin",
+      "name": "Berlin",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 975,
+      "sunshine_hours_per_year": 1650,
+      "default_price_per_kwh": 0.378,
+      "subsidy_note": "Berlin zählt zu den aktivsten Steckersolar-Städten Deutschlands; bundesweite 0 % MwSt. plus prüfen, ob aktuelle Förderfenster der IBB („SolarPLUS“) geöffnet sind."
+    },
+    {
+      "slug": "brandenburg",
+      "name": "Brandenburg",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 985,
+      "sunshine_hours_per_year": 1670,
+      "default_price_per_kwh": 0.376,
+      "subsidy_note": "Überdurchschnittlich gute Einstrahlung im Osten Deutschlands; 0 % MwSt. bundesweit und vereinfachte MaStR-Registrierung nach Solarpaket I."
+    },
+    {
+      "slug": "bremen",
+      "name": "Bremen",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 935,
+      "sunshine_hours_per_year": 1560,
+      "default_price_per_kwh": 0.375,
+      "subsidy_note": "Trotz norddeutschem Klima amortisiert sich ein 800-W-Balkonkraftwerk in Bremen bei hohen Strompreisen meist in unter 3,5 Jahren."
+    },
+    {
+      "slug": "hamburg",
+      "name": "Hamburg",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 935,
+      "sunshine_hours_per_year": 1570,
+      "default_price_per_kwh": 0.379,
+      "subsidy_note": "Hohe Grundversorgungstarife im Stadtgebiet gleichen die etwas geringere Globalstrahlung aus; 0 % MwSt. auf Module, Wechselrichter & Speicher."
+    },
+    {
+      "slug": "hessen",
+      "name": "Hessen",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 995,
+      "sunshine_hours_per_year": 1640,
+      "default_price_per_kwh": 0.373,
+      "subsidy_note": "Solide Mitteleinstrahlung im Rhein-Main-Gebiet; lokale Städte (z. B. Frankfurt, Darmstadt, Wiesbaden) bieten periodisch eigene Zuschüsse an."
+    },
+    {
+      "slug": "mecklenburg-vorpommern",
+      "name": "Mecklenburg-Vorpommern",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 980,
+      "sunshine_hours_per_year": 1720,
+      "default_price_per_kwh": 0.382,
+      "subsidy_note": "Die Ostseeküste gehört zu den sonnigsten Regionen Norddeutschlands; in Kombination mit überdurchschnittlichen Netzentgelten sehr kurze Amortisationszeit."
+    },
+    {
+      "slug": "niedersachsen",
+      "name": "Niedersachsen",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 945,
+      "sunshine_hours_per_year": 1580,
+      "default_price_per_kwh": 0.375,
+      "subsidy_note": "Bundesweit 0 % MwSt. und unkomplizierte Anmeldung im MaStR; kommunale Klimaschutz-Töpfe z. B. in Hannover oder Braunschweig prüfen."
+    },
+    {
+      "slug": "nordrhein-westfalen",
+      "name": "Nordrhein-Westfalen",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 955,
+      "sunshine_hours_per_year": 1590,
+      "default_price_per_kwh": 0.374,
+      "subsidy_note": "Größter Balkonkraftwerk-Markt Deutschlands; viele NRW-Städte (u. a. Düsseldorf, Köln, Münster, Bonn) bieten zeitweise eigene Balkonsolar-Zuschüsse."
+    },
+    {
+      "slug": "rheinland-pfalz",
+      "name": "Rheinland-Pfalz",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 1020,
+      "sunshine_hours_per_year": 1690,
+      "default_price_per_kwh": 0.373,
+      "subsidy_note": "Besonders die Vorderpfalz und Rheinhessen erreichen über 1.050 kWh/kWp – optimale Bedingungen für Balkonmodule und kleine Speicher."
+    },
+    {
+      "slug": "saarland",
+      "name": "Saarland",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 1015,
+      "sunshine_hours_per_year": 1680,
+      "default_price_per_kwh": 0.374,
+      "subsidy_note": "Hohe südwestdeutsche Einstrahlung kombiniert mit 0 % MwSt. bundesweit sorgt für attraktive 10-Jahres-Nettoerträge."
+    },
+    {
+      "slug": "sachsen",
+      "name": "Sachsen",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 1005,
+      "sunshine_hours_per_year": 1670,
+      "default_price_per_kwh": 0.375,
+      "subsidy_note": "Über 1.000 kWh/kWp im Elbtal und in der Lausitz; bundesweit 0 % MwSt. und vereinfachte Anmeldung nach Solarpaket I."
+    },
+    {
+      "slug": "sachsen-anhalt",
+      "name": "Sachsen-Anhalt",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 985,
+      "sunshine_hours_per_year": 1650,
+      "default_price_per_kwh": 0.378,
+      "subsidy_note": "Gute Einstrahlung im Harzvorland und Elbe-Saale-Raum; hohe regionale Netzentgelte steigern die jährliche Ersparnis."
+    },
+    {
+      "slug": "schleswig-holstein",
+      "name": "Schleswig-Holstein",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 930,
+      "sunshine_hours_per_year": 1610,
+      "default_price_per_kwh": 0.384,
+      "subsidy_note": "Kühler Wind hält die Solarmodule effizient, und leicht überdurchschnittliche Strompreise verkürzen die Amortisation trotz nördlicher Lage."
+    },
+    {
+      "slug": "thueringen",
+      "name": "Thüringen",
+      "region_type": "Bundesland (DE)",
+      "country": "DE",
+      "specific_yield_kwh_per_kwp": 995,
+      "sunshine_hours_per_year": 1640,
+      "default_price_per_kwh": 0.375,
+      "subsidy_note": "Solide Einstrahlung im Thüringer Becken; 0 % MwSt. bundesweit sowie gelegentliche Landes- oder Stadtprogramme prüfen."
+    },
+    {
+      "slug": "zuerich",
+      "name": "Zürich",
+      "region_type": "Kanton / Region (CH)",
+      "country": "CH",
+      "specific_yield_kwh_per_kwp": 1060,
+      "sunshine_hours_per_year": 1690,
+      "default_price_per_kwh": 0.277,
+      "subsidy_note": "Schweiz (ESTI-Regel): Vereinfachte Plug-&-Play-Balkonkraftwerke bis max. 600 W Wechselrichterleistung mit Meldung beim EWZ/EKZ. ElCom-Strompreis 2026 im Median ca. 27,7 Rp./kWh."
+    },
+    {
+      "slug": "bern",
+      "name": "Bern",
+      "region_type": "Kanton / Region (CH)",
+      "country": "CH",
+      "specific_yield_kwh_per_kwp": 1075,
+      "sunshine_hours_per_year": 1710,
+      "default_price_per_kwh": 0.285,
+      "subsidy_note": "Kanton Bern bietet überdurchschnittliche Solarerträge; Meldung der 600-W-Steckeranlage an BKW bzw. ewb vor Inbetriebnahme beachten."
+    },
+    {
+      "slug": "basel",
+      "name": "Basel",
+      "region_type": "Kanton / Region (CH)",
+      "country": "CH",
+      "specific_yield_kwh_per_kwp": 1055,
+      "sunshine_hours_per_year": 1680,
+      "default_price_per_kwh": 0.277,
+      "subsidy_note": "Im sonnigen Oberrheingraben rund um Basel erzielen Südbalkone über 1.050 kWh/kWp; ESTI-Grenze von 600 W in der Schweiz sowie IWB-Meldepflicht beachten."
+    },
+    {
+      "slug": "genf",
+      "name": "Genf",
+      "region_type": "Kanton / Region (CH)",
+      "country": "CH",
+      "specific_yield_kwh_per_kwp": 1135,
+      "sunshine_hours_per_year": 1830,
+      "default_price_per_kwh": 0.277,
+      "subsidy_note": "Genf zählt zu den sonnenreichsten Regionen der Deutsch- und Westschweiz (ca. 1.135 kWh/kWp); vereinfachte Plug-&-Play-Meldung bei SIG bis 600 W."
+    }
+  ]
+}

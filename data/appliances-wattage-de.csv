@@ -1,0 +1,41 @@
+slug,name,category,watt,old_device_watt,replacement_cost_eur,default_hours_per_day,default_days_per_year,unit_label,unit_kwh,annual_kwh_default,annual_cost_eur_de_2026
+waschmaschine-60-grad,Waschmaschine (60 °C Vollwäsche),Waschen & Trocknen,1150,1650,549,1,180,"pro Waschgang (60 °C, 7–8 kg)",1.15,207,77.21
+waschmaschine-30-grad,Waschmaschine (30 °C Pflegeleicht),Waschen & Trocknen,450,720,549,1,220,pro Waschgang (30 °C),0.45,99,36.93
+waermepumpentrockner,"Wärmepumpentrockner (8 kg, Klasse A+++)",Waschen & Trocknen,900,2150,599,1.6,160,"pro Trockengang (ca. 1,45 kWh)",1.45,230.4,85.94
+kondenstrockner,Kondenstrockner (klassisch ohne Wärmepumpe),Waschen & Trocknen,2250,2500,599,1.6,160,"pro Trockengang (ca. 3,60 kWh)",3.6,576,214.85
+klimaanlage-kuehlen,Klimaanlage zum Kühlen (Split vs. Monoblock),Heizen & Kühlen,750,1250,1290,5,60,"pro Stunde (Inverter-Split, Teillast)",0.75,225,83.92
+klimaanlage-heizen,Klimaanlage zum Heizen (Luft-Luft-Wärmepumpe),Heizen & Kühlen,850,2000,1490,6,120,"pro Stunde (SCOP ca. 4,0)",0.85,612,228.28
+heizluefter-2000-watt,Heizlüfter (2.000 Watt / Stufe 1 & 2),Heizen & Kühlen,2000,2200,85,2,90,pro Stunde (Volllast 2.000 W),2,360,134.28
+infrarotheizung-600w,Infrarotheizung (600 Watt Paneel),Heizen & Kühlen,600,1000,280,4,120,"pro Stunde Volllast (0,60 kWh)",0.6,288,107.42
+ps5-pro-stunde,PlayStation 5 / PS5 Slim (Gaming & Streaming),Unterhaltung & Büro,205,230,499,2.5,300,pro Stunde 4K-Gaming (Konsole allein),0.205,153.8,57.35
+gaming-pc-stromkosten,Gaming-PC (Mittel- bis Oberklasse + Monitor),Unterhaltung & Büro,420,580,1400,3,320,"pro Stunde Gaming (PC + 27""-Monitor)",0.42,403.2,150.39
+kuehlschrank-alt-vs-neu,Kühlschrank / Kühl-Gefrierkombi (Alt vs. Neu),Küche,17,48,699,24,365,pro Jahr (Dauerbetrieb 24/7),0.41,148.9,55.55
+gefrierschrank-im-jahr,Gefrierschrank / Gefriertruhe (24/7 Dauerbetrieb),Küche,22,52,599,24,365,"pro Tag (ca. 0,53 kWh, ~193 kWh/Jahr)",0.53,192.7,71.88
+backofen-pro-stunde,Backofen (Umluft 180 °C vs. Ober-/Unterhitze),Küche,1100,1450,499,0.75,200,pro Stunde Backen (inkl. Aufheizen),1.1,165,61.55
+induktionsherd,Induktionsherd vs. Cerankochfeld,Küche,1400,1850,550,0.8,300,pro Stunde Kochen (Mischbetrieb),1.4,336,125.33
+heissluftfritteuse,Heißluftfritteuse / Airfryer (1.700 W),Küche,1350,2200,129,0.4,220,"pro Nutzung (20 Min., ca. 0,45 kWh)",0.45,118.8,44.31
+spuelmaschine-eco,Spülmaschine (Eco 50 °C vs. Kurzprogramm),Küche,850,1450,579,1,260,"pro Spülgang (Eco 50 °C, ~0,85 kWh)",0.85,221,82.43
+ventilator-dauerbetrieb,"Ventilator (Stand- & Turmventilator, Dauerbetrieb)",Heizen & Kühlen,42,65,79,8,75,"pro Stunde (Stufe 2, ~42 W)",0.042,25.2,9.4
+fernseher-oled-65-zoll,Fernseher OLED 65 Zoll (SDR & 4K-HDR),Unterhaltung & Büro,135,210,1499,4,350,pro Stunde (Mischbetrieb SDR/HDR),0.135,189,70.5
+router-fritzbox-jahr,WLAN-Router / FRITZ!Box (24/7 Jahreskosten),Unterhaltung & Büro,11,18,229,24,365,pro Jahr (ca. 96 kWh Dauerbetrieb),0.264,96.4,35.94
+homeoffice-setup,"Homeoffice-Arbeitsplatz (Laptop, Monitor, Dock)",Unterhaltung & Büro,95,190,850,8,220,"pro Arbeitstag (8 Std., ca. 0,76 kWh)",0.76,167.2,62.37
+aquarium-200l,"Aquarium 200 Liter (Heizung, Filter, LED-Licht)",Haus & Garten,55,105,260,24,365,"pro Tag (Mischleistung ca. 55 W, ~482 kWh/Jahr)",1.32,481.8,179.71
+durchlauferhitzer-duschen,Durchlauferhitzer (Duschen mit 21 kW),Haus & Garten,21000,24000,499,0.25,350,"pro 10-Min.-Dusche (~3,5 kWh)",3.5,1837.5,685.39
+e-bike-akku-laden,E-Bike Akku laden (500–750 Wh),Haus & Garten,160,180,95,0.7,120,pro Vollladung (625 Wh inkl. Ladeverlust),0.72,13.4,5.01
+luftentfeuchter,Luftentfeuchter (Keller & Wäschetrocknung),Heizen & Kühlen,320,480,249,5,180,"pro Stunde Kompressorbetrieb (0,32 kWh)",0.32,288,107.42
+poolpumpe-sommer,Poolpumpe / Sandfilteranlage (Sommersaison),Haus & Garten,450,750,499,8,130,"pro Tag (8 Std. Filterzeit, ~3,6 kWh)",3.6,468,174.56
+mikrowelle,Mikrowelle (800 W Erwärmen),Küche,1200,1400,129,0.15,330,"pro 5 Min. Erwärmen (~0,10 kWh)",0.1,59.4,22.16
+kaffeemaschine-vollautomat,"Kaffeevollautomat (Brühen, Spülen, Standby)",Küche,1450,1650,499,0.25,365,pro Tag (ca. 6 Tassen inkl. Aufheizen),0.36,132.3,49.35
+wasserkocher,"Wasserkocher (2.200 W, 1 Liter Wasser)",Küche,2200,2200,39,0.12,365,"pro 1 Liter Wasser kochen (~0,11 kWh)",0.11,96.4,35.94
+buegeleisen,Dampfbügeleisen / Dampfbügelstation (2.400 W),Waschen & Trocknen,1200,1600,89,0.5,100,"pro Stunde Bügeln (Taktbetrieb ~1,2 kWh)",1.2,60,22.38
+staubsauger,Staubsauger (Bodenstaubsauger vs. Akku),Haus & Garten,750,1800,249,0.35,150,"pro Stunde Saugen (~0,75 kWh)",0.75,39.4,14.69
+wlan-repeater,WLAN-Repeater / Mesh-Node (24/7 Betrieb),Unterhaltung & Büro,5.5,9,79,24,365,pro Jahr (ca. 48 kWh Dauerbetrieb),0.132,48.2,17.97
+nas-server-24-7,NAS-Server / Heimserver (24/7 Dauerbetrieb),Unterhaltung & Büro,24,48,449,24,365,"pro Jahr (2-Bay NAS, ~210 kWh/Jahr)",0.576,210.2,78.42
+waermepumpe-stromkosten,"Wärmepumpe (Einfamilienhaus, Jahresstromkosten)",Heizen & Kühlen,1400,2100,18500,11,210,"pro Heiztag (Ø 15,4 kWh, ~3.234 kWh/Jahr)",15.4,3234,1206.28
+sauna-zuhause,"Heimsauna (8 kW Ofen, 2 Stunden Saunagang)",Haus & Garten,5500,7500,1200,2,45,"pro Saunaabend (inkl. 45 Min. Aufheizen, ~11 kWh)",11,495,184.63
+whirlpool-aufblasbar,Aufblasbarer Whirlpool (Heizen & Filtern),Haus & Garten,420,620,699,12,120,"pro Tag Haltebetrieb (~5,0 kWh/Tag)",5.04,604.8,225.59
+trockner-vs-waeschestaender,Wäschetrockner vs. Wäscheständer (Jahresvergleich),Waschen & Trocknen,1450,2250,35,1.5,150,"pro Trockengang gespart (Ø 2,18 kWh)",2.18,326.3,121.69
+gluehbirne-vs-led,LED-Lampe vs. Glühbirne / Halogen (60 W Ersatz),Haus & Garten,8,60,5,4,365,"pro Jahr (4 Std./Tag, ~11,7 kWh)",0.032,11.7,4.36
+laptop-pro-stunde,Laptop / Notebook (Office & Video-Calls),Unterhaltung & Büro,35,75,799,6,300,"pro Stunde Betrieb (~0,035 kWh)",0.035,63,23.5
+heizdecke-nacht,Heizdecke / Wärmeunterbett (pro Nacht),Heizen & Kühlen,60,100,55,4,120,"pro Abend/Nacht (4 Std., ~0,24 kWh)",0.24,28.8,10.74
+babyphone-dauerbetrieb,Babyphone mit Kamera (Nacht- & Dauerbetrieb),Unterhaltung & Büro,6,10,119,14,365,"pro Jahr (14 Std./Tag, ~31 kWh)",0.084,30.7,11.44

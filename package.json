@@ -1,0 +1,69 @@
+{
+  "name": "balkonkraftwerk-stromkosten-de",
+  "version": "2026.1.0",
+  "description": "Offene 2026 Berechnungs-Engine & DACH-Referenzdaten für Balkonkraftwerke (± Speicher), Haushaltsgeräte-Stromkosten und E-Auto-Ladekosten (BDEW, ElCom, E-Control, DIN VDE V 0126-95).",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./solar": {
+      "types": "./src/index.d.ts",
+      "import": "./src/solar.js"
+    },
+    "./appliances": {
+      "types": "./src/index.d.ts",
+      "import": "./src/appliances.js"
+    },
+    "./ev": {
+      "types": "./src/index.d.ts",
+      "import": "./src/ev.js"
+    },
+    "./countries": {
+      "types": "./src/index.d.ts",
+      "import": "./src/countries.js"
+    },
+    "./data/benchmarks-2026.json": "./data/benchmarks-2026.json"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CITATION.cff"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://kwhkostenrechner.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwhkostenrechner/balkonkraftwerk-stromkosten-de.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kwhkostenrechner/balkonkraftwerk-stromkosten-de/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "balkonkraftwerk",
+    "steckersolargeraet",
+    "stromkosten",
+    "photovoltaik",
+    "solarpaket",
+    "din-vde-v-0126-95",
+    "bdew",
+    "ev-charging",
+    "e-auto",
+    "dach",
+    "germany",
+    "open-data",
+    "energy-calculator"
+  ]
+}
