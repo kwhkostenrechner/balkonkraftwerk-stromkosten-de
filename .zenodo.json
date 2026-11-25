@@ -1,0 +1,58 @@
+{
+  "title": "DACH 2026 Balcony Solar (Balkonkraftwerk), Electricity Tariff & EV Charging Open Dataset and Calculation Engine",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-24",
+  "version": "2026.1.0",
+  "language": "deu",
+  "description": "Open reference datasets (JSON/CSV) and zero-dependency ESM calculation formulas published by kWhKostenRechner (kwhkostenrechner.com) for Germany, Switzerland, and Austria (2026 benchmarks: BDEW 37.3 ct/kWh, ElCom 27.7 Rp./kWh, E-Control 27.0 ct/kWh, PVGIS solar yields, and Solarpaket I / DIN VDE V 0126-95). Covers balcony solar ROI with/without LiFePO4 storage, household appliance electricity costs (https://kwhkostenrechner.com/stromkosten/), and EV home-charging vs. combustion vehicle cost comparisons (https://kwhkostenrechner.com/e-auto-laden/).",
+  "creators": [
+    {
+      "name": "kWhKostenRechner Maintainers",
+      "type": "Organization",
+      "affiliation": "kWhKostenRechner"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "balkonkraftwerk",
+    "stromkosten",
+    "photovoltaik",
+    "solarpaket",
+    "ev-charging",
+    "germany",
+    "dach",
+    "open-data",
+    "energy-calculator",
+    "javascript",
+    "din-vde-v-0126-95",
+    "kwhkostenrechner.com",
+    "2026"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://kwhkostenrechner.com/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://kwhkostenrechner.com/stromkosten/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://kwhkostenrechner.com/e-auto-laden/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/kwhkostenrechner/balkonkraftwerk-stromkosten-de",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
